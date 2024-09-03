@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "numeric": "c",
+        "stdio.h": "c",
+        "math_utils.h": "c",
+        "math_constants.h": "c"
+    }
+}
