@@ -8,10 +8,8 @@
 /// @param num (double) the argument for the natural logarithm
 /// @return (double) ln(x)
 double natural_logarithm(double num) {
-    /*
-     * Taylor Series Expansion of ln(1+x)
-     * sigma(0, infinity)  = [(-1)^(n+1)]*[(x^n)/n]
-    */
+     // Taylor Series Expansion of ln(1+x)
+     // sigma(0, infinity)  = [(-1)^(n+1)]*[(x^n)/n]
     double buffer_logarithm_value = 0.0;
 
     if ((num >= 1) && (num < (1 + TOLERANCE))){
@@ -48,10 +46,8 @@ double natural_logarithm(double num) {
 /// @param num (double) the power to which e will be raised
 /// @return (double) e^x
 double exponentiation_function(double num) {
-    /*
-     * Taylor series expansion of e^x
-     * sigma(0, infinity) = x^n/n!
-    */
+     // Taylor series expansion of e^x
+     // sigma(0, infinity) = x^n/n!
     if (absolute(num) < APPROXIMATION_THRESHOLD) {
         // Use approximation for very small values
         // e^x = 1 + x + (x^2)/2
