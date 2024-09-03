@@ -26,9 +26,6 @@ double absolute(double num) {
 /// @param num (double) input number
 /// @return 1 if positive input and -1 if negative input
 int is_positive(double num) {
-    /*
-     * return 1 is true and -1 if false
-    */
     return (num > 0) ? 1 : -1;
 }
 
