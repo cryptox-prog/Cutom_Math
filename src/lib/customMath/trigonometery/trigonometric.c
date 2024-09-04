@@ -3,7 +3,7 @@
 #include "../utilities/math_utils.h"
 #include "../exponents/exponents.h"
 
-/// @brief Calculates value of sine value using taylor series
+/// @brief Calculates value of sine using taylor series
 /// @param angle (double) intput angle
 /// @param is_rad (int) 1 if in radian and 0 if degree
 /// @return (double) sin(x)
@@ -35,4 +35,44 @@ double sine(double angle, int is_rad) {
         }
     return buffer_sine_value;
     }
+}
+
+/// @brief Calculates value of cosine using sin(90 - x) = cos(x)
+/// @param angle (double) intput angle
+/// @param is_rad (int) 1 if in radian and 0 if degree
+/// @return (double) cos(x)
+double cosine(double angle, int is_rad) {
+    return sine(((PI/2) - angle), is_rad);
+}
+
+/// @brief Calculates value of cosine using tan(x) = sin(x)/cos(x)
+/// @param angle (double) intput angle
+/// @param is_rad (int) 1 if in radian and 0 if degree
+/// @return (double) tan(x)
+double tangent(double angle, int is_rad) {
+    return (sine(angle, is_rad) / cosine(angle, is_rad));
+}
+
+/// @brief Calculates value of cosine using cosec(x) = 1/sin(x)
+/// @param angle (double) intput angle
+/// @param is_rad (int) 1 if in radian and 0 if degree
+/// @return (double) cosec(x)
+double cosecant(double angle, int is_rad) {
+    return (1/sine(angle, is_rad));
+}
+
+/// @brief Calculates value of cosine using sec(x) = 1/cos(x)
+/// @param angle (double) intput angle
+/// @param is_rad (int) 1 if in radian and 0 if degree
+/// @return (double) sec(x)
+double secant(double angle, int is_rad) {
+    return (1/cosine(angle, is_rad));
+}
+
+/// @brief Calculates value of cosine using cot(x) = 1/tan(x)
+/// @param angle (double) intput angle
+/// @param is_rad (int) 1 if in radian and 0 if degree
+/// @return (double) cot(x)
+double cotangent(double angle, int is_rad) {
+    return (1/tangent(angle, is_rad));
 }
