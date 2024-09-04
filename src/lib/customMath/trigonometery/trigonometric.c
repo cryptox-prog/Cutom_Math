@@ -4,10 +4,8 @@
 #include "../exponents/exponents.h"
 
 double sine(double angle, int is_rad) {
-    /*
-     * Taylor Series Expansion of Sine Function
-     * sigma(infinity, 0) = {[(-1)^(n)]/[(2n + 1)!]}*[x^(2n + 1)]
-    */
+    //Taylor Series Expansion of Sine Function
+    //sigma(0, infinity) = {[(-1)^(n)]/[(2n + 1)!]}*[x^(2n + 1)]
     angle = (is_rad != 1) ? rad_to_deg(angle) : angle;
     if (absolute(angle) < APPROXIMATION_THRESHOLD) {
         return angle;
