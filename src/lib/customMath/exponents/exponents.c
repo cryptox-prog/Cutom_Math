@@ -59,7 +59,7 @@ double exponentiation_function(double num) {
         // e^(x+y) = (e^x)*(e^y)
         // Use this property with pre calculated values to bring x closer to 1 and increase accuracy
 
-        // Find the number of times Simplification constant needs to subtracted
+        // Find the number of times simplification constant needs to subtracted
         int num_steps = (int)(num / SIMPLIFICATION_CONSTANT);
         if (num_steps != 0) {
             num -= num_steps * SIMPLIFICATION_CONSTANT;
