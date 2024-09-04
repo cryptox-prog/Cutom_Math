@@ -7,6 +7,7 @@ double absolute(double num);
 int is_positive(double num);
 int is_int(double num);
 int is_even(double num);
+double mod(double num_1, double num_2);
 unsigned long long factorial(int num);
 
 #endif // MATH_UTILS_H

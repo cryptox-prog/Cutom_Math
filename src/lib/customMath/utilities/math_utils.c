@@ -44,6 +44,14 @@ int is_even(double num) {
     return (((int)absolute(num) % 2 < TOLERANCE) || num == 0) ? 1 : 0;
 }
 
+/// @brief Calcualte the remainder from divsion
+/// @param num_1 (double) The dividend
+/// @param num_2 (double) The divisor
+/// @return The remaineder
+double mod(double num_1, double num_2) {
+    return num_1 - num_2 * (int)(num_1 / num_2);
+}
+
 /// @brief Find the factorial using loop
 /// @param num (double) input number
 /// @return (int) x!
