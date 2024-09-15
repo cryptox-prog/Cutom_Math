@@ -9,7 +9,7 @@
 /// @return (double) sin(x)
 double sine(double angle, int is_rad) {
     //Taylor Series Expansion of Sine Function
-    //sigma(0, infinity) = {[(-1)^(n)]/[(2n + 1)!]}*[x^(2n + 1)]
+    //sigma(0, infinity) = {[(-1)^(n)]/[(2n + 1)!]}*[x^(2n + 1)]}
     angle = (is_rad == 0) ? deg_to_rad(angle) : angle;  // Convert to radians, if needed
     if (absolute(angle) < APPROXIMATION_THRESHOLD) {
         return angle;
@@ -24,6 +24,7 @@ double sine(double angle, int is_rad) {
             int cycles = (int)(angle / (2*PI));
             double simplification_factor = cycles * 2 * PI;
             angle += (is_positive(angle) == 1) ? -simplification_factor : simplification_factor;
+            angle = mod(angle, 2*PI);
         }
         double term = angle; // First term of the series
         double buffer_sine_value = term; // Intialize answer placeholder
@@ -42,7 +43,8 @@ double sine(double angle, int is_rad) {
 /// @param is_rad (int) 1 if in radian and 0 if degree
 /// @return (double) cos(x)
 double cosine(double angle, int is_rad) {
-    return sine(((PI/2) - angle), is_rad);
+    double phase_change  = (is_rad == 1) ? PI/2 : STRAIGHT_ANGLE/2;
+    return sine((phase_change - angle), is_rad);
 }
 
 /// @brief Calculates value of cosine using tan(x) = sin(x)/cos(x)
