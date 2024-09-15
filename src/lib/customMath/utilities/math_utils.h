@@ -9,5 +9,6 @@ int is_int(double num);
 int is_even(double num);
 double mod(double num_1, double num_2);
 unsigned long long factorial(int num);
+int int_var_swap(int* num1, int* num2);
 
 #endif // MATH_UTILS_H
