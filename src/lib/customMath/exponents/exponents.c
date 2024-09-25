@@ -125,3 +125,7 @@ double power(double num, double exp) {
         }
     }
 }
+
+double square(double num) {
+    return num*num;
+}
