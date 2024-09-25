@@ -6,5 +6,6 @@
 #include "trigonometery/trigonometric.h"
 #include "utilities/math_utils.h"
 #include "array_handling/sorter.h"
+#include "vectors/vector.h"
 
 #endif // CUSTOM_MATH_H
