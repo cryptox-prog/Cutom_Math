@@ -11,9 +11,25 @@
 void initialize_vector(Vector *V, unsigned int vec_dimension, double *vector_array) {
     V->dimension = vec_dimension;
     V->vector = (double *)malloc(V->dimension * sizeof(double));
+    if (V->vector == NULL) {
+        printf("Memory Allocation Failure\n");
+        exit(EXIT_FAILURE);
+    }
     for (int i = 0; i < V->dimension; i++) {
         V->vector[i] = vector_array[i];
     }
+    double sum_part = 0;
+    for (int i = 0; i < V->dimension; i++) {
+        sum_part += square(V->vector[i]);
+    }
+    V->magnitude = power(sum_part, 0.5);
+}
+
+/// @brief Initialize a 2D vector
+/// @param V vector
+/// @param vector_array the (double) array given by user of size 2
+void initialize_vector_2d(Vector *V, double vector_array[2]) {
+    initialize_vector(V, 2, vector_array);
 }
 
 /// @brief Initialize a 3D vector
@@ -67,4 +83,16 @@ double vector_dot_product(Vector V1, Vector V2) {
         sum_part += product_part;
     }
     return sum_part;
+}
+
+void cross_product_3d(Vector V1, Vector V2, Vector *Vec_Result) {
+    if ((V1.dimension == 3) || (V2.dimension == 3)) {
+        double i_comp = (V1.vector[1] * V2.vector[2]) - (V1.vector[2] * V2.vector[1]);
+        double j_comp = (V1.vector[0] * V2.vector[2]) - (V1.vector[2] * V2.vector[0]);
+        double k_comp = (V1.vector[0] * V2.vector[1]) - (V1.vector[1] * V2.vector[0]);
+        double temp_arr[3] = {i_comp, j_comp, k_comp};
+        initialize_vector_3d(Vec_Result, temp_arr);
+    } else {
+        Vec_Result = NULL;
+    }
 }
