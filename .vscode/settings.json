@@ -3,6 +3,14 @@
         "numeric": "c",
         "stdio.h": "c",
         "math_utils.h": "c",
-        "math_constants.h": "c"
+        "math_constants.h": "c",
+        "trigonometric.h": "c",
+        "exponents.h": "c",
+        "sstream": "c",
+        "custom_math.h": "c",
+        "array": "c",
+        "initializer_list": "c",
+        "utility": "c",
+        "vector": "c"
     }
 }
