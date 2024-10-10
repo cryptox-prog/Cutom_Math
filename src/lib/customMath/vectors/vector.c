@@ -22,7 +22,8 @@ void initialize_vector(Vector *V, unsigned int vec_dimension, double *vector_arr
     for (int i = 0; i < V->dimension; i++) {
         sum_part += square(V->vector[i]);
     }
-    V->magnitude = power(sum_part, 0.5);
+    int* error_code;
+    V->magnitude = power(sum_part, 0.5, error_code);
 }
 
 /// @brief Initialize a 2D vector
@@ -67,7 +68,8 @@ double distance(Vector V1, Vector V2) {
             sum_part += square(difference_part);
         }
     }
-    return power(sum_part, 0.5);
+    int *error_code;
+    return power(sum_part, 0.5, error_code);
 }
 
 /// @brief Finds the dot product of the vectors
