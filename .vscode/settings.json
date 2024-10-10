@@ -11,6 +11,8 @@
         "array": "c",
         "initializer_list": "c",
         "utility": "c",
-        "vector": "c"
+        "vector": "c",
+        "error_handling.h": "c",
+        "stdlib.h": "c"
     }
 }
