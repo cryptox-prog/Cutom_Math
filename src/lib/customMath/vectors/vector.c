@@ -1,19 +1,18 @@
 #include "vector.h"
+#include "../error_handling.h"
 #include "../exponents/exponents.h"
 #include "../utilities/math_utils.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 /// @brief Initialize a n-dimensional vector
 /// @param V vector
 /// @param (int) dimension of the vector
 /// @param vector_array the (double) array given by user
-void initialize_vector(Vector *V, unsigned int vec_dimension, double *vector_array) {
+void initialize_vector(Vector *V, unsigned int vec_dimension, double *vector_array, int *error_code) {
     V->dimension = vec_dimension;
     V->vector = (double *)malloc(V->dimension * sizeof(double));
     if (V->vector == NULL) {
-        printf("Memory Allocation Failure\n");
-        exit(EXIT_FAILURE);
+        *error_code = ERR_MEM_ALLOC;
     }
     for (int i = 0; i < V->dimension; i++) {
         V->vector[i] = vector_array[i];
@@ -22,22 +21,21 @@ void initialize_vector(Vector *V, unsigned int vec_dimension, double *vector_arr
     for (int i = 0; i < V->dimension; i++) {
         sum_part += square(V->vector[i]);
     }
-    int* error_code;
     V->magnitude = power(sum_part, 0.5, error_code);
 }
 
 /// @brief Initialize a 2D vector
 /// @param V vector
 /// @param vector_array the (double) array given by user of size 2
-void initialize_vector_2d(Vector *V, double vector_array[2]) {
-    initialize_vector(V, 2, vector_array);
+void initialize_vector_2d(Vector *V, double vector_array[2], int *error_code) {
+    initialize_vector(V, 2, vector_array, error_code);
 }
 
 /// @brief Initialize a 3D vector
 /// @param V vector
 /// @param vector_array the (double) array given by user of size 3
-void initialize_vector_3d(Vector *V, double vector_array[3]) {
-    initialize_vector(V, 3, vector_array);
+void initialize_vector_3d(Vector *V, double vector_array[3], int *error_code) {
+    initialize_vector(V, 3, vector_array, error_code);
 }
 
 /// @brief Free the memory allocated to the vector
@@ -51,8 +49,10 @@ void free_vector(Vector *V) {
 /// @param V1 vector
 /// @param V2 vector
 /// @return (double) distance
-double distance(Vector V1, Vector V2) {
+double distance(Vector V1, Vector V2, int *error_code) {
     // dist^2(x) = sigma(0, n) (x1i - x2i)^2
+
+    // TODO: Fix This ugly logic
     int max_dimension = (V1.dimension > V2.dimension) ? V1.dimension : V2.dimension; // They may be of different dimension
     int flag = (V1.dimension > V2.dimension) ? (V2.dimension - 1) : -(V1.dimension - 1); // Negative flag if V2 has more components
     int dimension_diff = V1.dimension - V2.dimension;
@@ -68,7 +68,6 @@ double distance(Vector V1, Vector V2) {
             sum_part += square(difference_part);
         }
     }
-    int *error_code;
     return power(sum_part, 0.5, error_code);
 }
 
@@ -87,13 +86,13 @@ double vector_dot_product(Vector V1, Vector V2) {
     return sum_part;
 }
 
-void cross_product_3d(Vector V1, Vector V2, Vector *Vec_Result) {
+void cross_product_3d(Vector V1, Vector V2, Vector *Vec_Result, int *error_code) {
     if ((V1.dimension == 3) || (V2.dimension == 3)) {
         double i_comp = (V1.vector[1] * V2.vector[2]) - (V1.vector[2] * V2.vector[1]);
         double j_comp = (V1.vector[0] * V2.vector[2]) - (V1.vector[2] * V2.vector[0]);
         double k_comp = (V1.vector[0] * V2.vector[1]) - (V1.vector[1] * V2.vector[0]);
         double temp_arr[3] = {i_comp, j_comp, k_comp};
-        initialize_vector_3d(Vec_Result, temp_arr);
+        initialize_vector_3d(Vec_Result, temp_arr, error_code);
     } else {
         Vec_Result = NULL;
     }
