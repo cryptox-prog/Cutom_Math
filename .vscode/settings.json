@@ -13,6 +13,7 @@
         "utility": "c",
         "vector": "c",
         "error_handling.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "single.h": "c"
     }
 }

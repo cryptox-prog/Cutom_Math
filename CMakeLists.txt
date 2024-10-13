@@ -11,7 +11,7 @@ project(CustomMathTests C)
 set(CMAKE_C_STANDARD 99)
 
 # Include directories
-include_directories(src/lib/customMath tests/unity)
+include_directories(src/lib/customMath tests/unity tests/trigonometery)
 
 # Source files
 set(SOURCES
@@ -21,6 +21,7 @@ set(SOURCES
     src/lib/customMath/array_handling/sorter.c
     src/lib/customMath/vectors/vector.c
     tests/unity/unity.c
+    tests/trigonometery/sine_test.c
     tests/test_main.c
 )
 
