@@ -9,7 +9,7 @@
 /// @param num (double) the argument for the natural logarithm
 /// @param error_message (char *) error message
 /// @return (double) ln(x)
-double natural_logarithm(double num, int* error_message) {
+double natural_logarithm(double num, int *error_message) {
      // Taylor Series Expansion of ln(1+x)
      // sigma(0, infinity)  = [(-1)^(n+1)]*[(x^n)/n]
     double buffer_logarithm_value = 0.0;
@@ -102,7 +102,7 @@ double exponentiation_function(double num) {
 /// @param exp (double) exponent
 /// @param error_message (char *) error message
 /// @return (double) a^x
-double power(double num, double exp, int* error_message) {
+double power(double num, double exp, int *error_message) {
     // a^x = e^(x*ln(a))
     if (num == 0) {
         // 0^x = 0
