@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DUNITY_INCLUDE_DOUBLE
 
-C_INCLUDES = -I"/home/pranavm/Documents/C Programs/Cutom_Math/src/lib/customMath" -I"/home/pranavm/Documents/C Programs/Cutom_Math/tests/unity"
+C_INCLUDES = -I"/home/pranavm/Documents/C Programs/CutsomMathC/src/lib/customMath" -I"/home/pranavm/Documents/C Programs/CutsomMathC/tests/unity" -I"/home/pranavm/Documents/C Programs/CutsomMathC/tests/exponential"
 
-C_FLAGS = -std=gnu99
+C_FLAGS = -g -std=gnu99
 

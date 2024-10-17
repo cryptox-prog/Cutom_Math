@@ -7,9 +7,9 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/pranavm/Documents/C Programs/Cutom_Math/CMakeLists.txt"
-  "CMakeFiles/3.30.4/CMakeCCompiler.cmake"
-  "CMakeFiles/3.30.4/CMakeSystem.cmake"
+  "/home/pranavm/Documents/C Programs/CutsomMathC/CMakeLists.txt"
+  "CMakeFiles/3.30.5/CMakeCCompiler.cmake"
+  "CMakeFiles/3.30.5/CMakeSystem.cmake"
   "/usr/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
   "/usr/share/cmake/Modules/CMakeGenericSystem.cmake"

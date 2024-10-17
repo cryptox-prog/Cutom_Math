@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/pranavm/Documents/C Programs/Cutom_Math"
+CMAKE_SOURCE_DIR = "/home/pranavm/Documents/C Programs/CutsomMathC"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/pranavm/Documents/C Programs/Cutom_Math/build"
+CMAKE_BINARY_DIR = "/home/pranavm/Documents/C Programs/CutsomMathC/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/pranavm/Documents/C Programs/Cutom_Math/build/CMakeFiles" "/home/pranavm/Documents/C Programs/Cutom_Math/build//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/pranavm/Documents/C Programs/CutsomMathC/build/CMakeFiles" "/home/pranavm/Documents/C Programs/CutsomMathC/build//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/pranavm/Documents/C Programs/Cutom_Math/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/pranavm/Documents/C Programs/CutsomMathC/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -249,6 +249,30 @@ src/lib/customMath/vectors/vector.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/lib/customMath/vectors/vector.c.s
 .PHONY : src/lib/customMath/vectors/vector.c.s
 
+tests/exponential/e_x_test.o: tests/exponential/e_x_test.c.o
+.PHONY : tests/exponential/e_x_test.o
+
+# target to build an object file
+tests/exponential/e_x_test.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/exponential/e_x_test.c.o
+.PHONY : tests/exponential/e_x_test.c.o
+
+tests/exponential/e_x_test.i: tests/exponential/e_x_test.c.i
+.PHONY : tests/exponential/e_x_test.i
+
+# target to preprocess a source file
+tests/exponential/e_x_test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/exponential/e_x_test.c.i
+.PHONY : tests/exponential/e_x_test.c.i
+
+tests/exponential/e_x_test.s: tests/exponential/e_x_test.c.s
+.PHONY : tests/exponential/e_x_test.s
+
+# target to generate assembly for a file
+tests/exponential/e_x_test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/exponential/e_x_test.c.s
+.PHONY : tests/exponential/e_x_test.c.s
+
 tests/test_main.o: tests/test_main.c.o
 .PHONY : tests/test_main.o
 
@@ -321,6 +345,9 @@ help:
 	@echo "... src/lib/customMath/vectors/vector.o"
 	@echo "... src/lib/customMath/vectors/vector.i"
 	@echo "... src/lib/customMath/vectors/vector.s"
+	@echo "... tests/exponential/e_x_test.o"
+	@echo "... tests/exponential/e_x_test.i"
+	@echo "... tests/exponential/e_x_test.s"
 	@echo "... tests/test_main.o"
 	@echo "... tests/test_main.i"
 	@echo "... tests/test_main.s"

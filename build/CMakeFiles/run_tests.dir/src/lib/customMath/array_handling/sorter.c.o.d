@@ -1,7 +1,7 @@
 CMakeFiles/run_tests.dir/src/lib/customMath/array_handling/sorter.c.o: \
- /home/pranavm/Documents/C\ Programs/Cutom_Math/src/lib/customMath/array_handling/sorter.c \
+ /home/pranavm/Documents/C\ Programs/CutsomMathC/src/lib/customMath/array_handling/sorter.c \
  /usr/include/stdc-predef.h \
- /home/pranavm/Documents/C\ Programs/Cutom_Math/src/lib/customMath/array_handling/../utilities/math_utils.h \
+ /home/pranavm/Documents/C\ Programs/CutsomMathC/src/lib/customMath/array_handling/../utilities/math_utils.h \
  /usr/include/stdio.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \

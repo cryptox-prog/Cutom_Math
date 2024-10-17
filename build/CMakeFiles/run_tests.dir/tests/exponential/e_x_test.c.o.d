@@ -1,8 +1,8 @@
-CMakeFiles/run_tests.dir/tests/test_main.c.o: \
- /home/pranavm/Documents/C\ Programs/CutsomMathC/tests/test_main.c \
+CMakeFiles/run_tests.dir/tests/exponential/e_x_test.c.o: \
+ /home/pranavm/Documents/C\ Programs/CutsomMathC/tests/exponential/e_x_test.c \
  /usr/include/stdc-predef.h \
- /home/pranavm/Documents/C\ Programs/CutsomMathC/tests/unity/unity.h \
- /home/pranavm/Documents/C\ Programs/CutsomMathC/tests/unity/unity_internals.h \
+ /home/pranavm/Documents/C\ Programs/CutsomMathC/tests/exponential/../unity/unity.h \
+ /home/pranavm/Documents/C\ Programs/CutsomMathC/tests/exponential/../unity/unity_internals.h \
  /usr/include/setjmp.h /usr/include/features.h \
  /usr/include/features-time64.h /usr/include/bits/wordsize.h \
  /usr/include/bits/timesize.h /usr/include/sys/cdefs.h \
@@ -36,4 +36,13 @@ CMakeFiles/run_tests.dir/tests/test_main.c.o: \
  /usr/include/bits/types/FILE.h /usr/include/bits/types/struct_FILE.h \
  /usr/include/bits/types/cookie_io_functions_t.h \
  /usr/include/bits/stdio_lim.h \
- /home/pranavm/Documents/C\ Programs/CutsomMathC/tests/exponential/exponen_test.h
+ /home/pranavm/Documents/C\ Programs/CutsomMathC/tests/exponential/exponen_test.h \
+ /home/pranavm/Documents/C\ Programs/CutsomMathC/tests/exponential/../../src/lib/customMath/custom_math.h \
+ /home/pranavm/Documents/C\ Programs/CutsomMathC/tests/exponential/../../src/lib/customMath/math_constants.h \
+ /home/pranavm/Documents/C\ Programs/CutsomMathC/tests/exponential/../../src/lib/customMath/exponents/exponents.h \
+ /home/pranavm/Documents/C\ Programs/CutsomMathC/tests/exponential/../../src/lib/customMath/trigonometery/trigonometric.h \
+ /home/pranavm/Documents/C\ Programs/CutsomMathC/tests/exponential/../../src/lib/customMath/utilities/math_utils.h \
+ /home/pranavm/Documents/C\ Programs/CutsomMathC/tests/exponential/../../src/lib/customMath/array_handling/sorter.h \
+ /home/pranavm/Documents/C\ Programs/CutsomMathC/tests/exponential/../../src/lib/customMath/array_handling/linked_lists/single.h \
+ /home/pranavm/Documents/C\ Programs/CutsomMathC/tests/exponential/../../src/lib/customMath/vectors/vector.h \
+ /home/pranavm/Documents/C\ Programs/CutsomMathC/tests/exponential/../../src/lib/customMath/error_handling.h

@@ -1,3 +1,3 @@
-/home/pranavm/Documents/C Programs/Cutom_Math/build/CMakeFiles/run_tests.dir
-/home/pranavm/Documents/C Programs/Cutom_Math/build/CMakeFiles/edit_cache.dir
-/home/pranavm/Documents/C Programs/Cutom_Math/build/CMakeFiles/rebuild_cache.dir
+/home/pranavm/Documents/C Programs/CutsomMathC/build/CMakeFiles/run_tests.dir
+/home/pranavm/Documents/C Programs/CutsomMathC/build/CMakeFiles/edit_cache.dir
+/home/pranavm/Documents/C Programs/CutsomMathC/build/CMakeFiles/rebuild_cache.dir

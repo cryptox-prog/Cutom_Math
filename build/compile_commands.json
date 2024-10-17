@@ -1,0 +1,50 @@
+[
+{
+  "directory": "/home/pranavm/Documents/C Programs/CutsomMathC/build",
+  "command": "/usr/bin/cc -DUNITY_INCLUDE_DOUBLE -I\"/home/pranavm/Documents/C Programs/CutsomMathC/src/lib/customMath\" -I\"/home/pranavm/Documents/C Programs/CutsomMathC/tests/unity\" -I\"/home/pranavm/Documents/C Programs/CutsomMathC/tests/exponential\" -g -std=gnu99 -o CMakeFiles/run_tests.dir/src/lib/customMath/exponents/exponents.c.o -c \"/home/pranavm/Documents/C Programs/CutsomMathC/src/lib/customMath/exponents/exponents.c\"",
+  "file": "/home/pranavm/Documents/C Programs/CutsomMathC/src/lib/customMath/exponents/exponents.c",
+  "output": "CMakeFiles/run_tests.dir/src/lib/customMath/exponents/exponents.c.o"
+},
+{
+  "directory": "/home/pranavm/Documents/C Programs/CutsomMathC/build",
+  "command": "/usr/bin/cc -DUNITY_INCLUDE_DOUBLE -I\"/home/pranavm/Documents/C Programs/CutsomMathC/src/lib/customMath\" -I\"/home/pranavm/Documents/C Programs/CutsomMathC/tests/unity\" -I\"/home/pranavm/Documents/C Programs/CutsomMathC/tests/exponential\" -g -std=gnu99 -o CMakeFiles/run_tests.dir/src/lib/customMath/trigonometery/trigonometric.c.o -c \"/home/pranavm/Documents/C Programs/CutsomMathC/src/lib/customMath/trigonometery/trigonometric.c\"",
+  "file": "/home/pranavm/Documents/C Programs/CutsomMathC/src/lib/customMath/trigonometery/trigonometric.c",
+  "output": "CMakeFiles/run_tests.dir/src/lib/customMath/trigonometery/trigonometric.c.o"
+},
+{
+  "directory": "/home/pranavm/Documents/C Programs/CutsomMathC/build",
+  "command": "/usr/bin/cc -DUNITY_INCLUDE_DOUBLE -I\"/home/pranavm/Documents/C Programs/CutsomMathC/src/lib/customMath\" -I\"/home/pranavm/Documents/C Programs/CutsomMathC/tests/unity\" -I\"/home/pranavm/Documents/C Programs/CutsomMathC/tests/exponential\" -g -std=gnu99 -o CMakeFiles/run_tests.dir/src/lib/customMath/utilities/math_utils.c.o -c \"/home/pranavm/Documents/C Programs/CutsomMathC/src/lib/customMath/utilities/math_utils.c\"",
+  "file": "/home/pranavm/Documents/C Programs/CutsomMathC/src/lib/customMath/utilities/math_utils.c",
+  "output": "CMakeFiles/run_tests.dir/src/lib/customMath/utilities/math_utils.c.o"
+},
+{
+  "directory": "/home/pranavm/Documents/C Programs/CutsomMathC/build",
+  "command": "/usr/bin/cc -DUNITY_INCLUDE_DOUBLE -I\"/home/pranavm/Documents/C Programs/CutsomMathC/src/lib/customMath\" -I\"/home/pranavm/Documents/C Programs/CutsomMathC/tests/unity\" -I\"/home/pranavm/Documents/C Programs/CutsomMathC/tests/exponential\" -g -std=gnu99 -o CMakeFiles/run_tests.dir/src/lib/customMath/array_handling/sorter.c.o -c \"/home/pranavm/Documents/C Programs/CutsomMathC/src/lib/customMath/array_handling/sorter.c\"",
+  "file": "/home/pranavm/Documents/C Programs/CutsomMathC/src/lib/customMath/array_handling/sorter.c",
+  "output": "CMakeFiles/run_tests.dir/src/lib/customMath/array_handling/sorter.c.o"
+},
+{
+  "directory": "/home/pranavm/Documents/C Programs/CutsomMathC/build",
+  "command": "/usr/bin/cc -DUNITY_INCLUDE_DOUBLE -I\"/home/pranavm/Documents/C Programs/CutsomMathC/src/lib/customMath\" -I\"/home/pranavm/Documents/C Programs/CutsomMathC/tests/unity\" -I\"/home/pranavm/Documents/C Programs/CutsomMathC/tests/exponential\" -g -std=gnu99 -o CMakeFiles/run_tests.dir/src/lib/customMath/vectors/vector.c.o -c \"/home/pranavm/Documents/C Programs/CutsomMathC/src/lib/customMath/vectors/vector.c\"",
+  "file": "/home/pranavm/Documents/C Programs/CutsomMathC/src/lib/customMath/vectors/vector.c",
+  "output": "CMakeFiles/run_tests.dir/src/lib/customMath/vectors/vector.c.o"
+},
+{
+  "directory": "/home/pranavm/Documents/C Programs/CutsomMathC/build",
+  "command": "/usr/bin/cc -DUNITY_INCLUDE_DOUBLE -I\"/home/pranavm/Documents/C Programs/CutsomMathC/src/lib/customMath\" -I\"/home/pranavm/Documents/C Programs/CutsomMathC/tests/unity\" -I\"/home/pranavm/Documents/C Programs/CutsomMathC/tests/exponential\" -g -std=gnu99 -o CMakeFiles/run_tests.dir/tests/unity/unity.c.o -c \"/home/pranavm/Documents/C Programs/CutsomMathC/tests/unity/unity.c\"",
+  "file": "/home/pranavm/Documents/C Programs/CutsomMathC/tests/unity/unity.c",
+  "output": "CMakeFiles/run_tests.dir/tests/unity/unity.c.o"
+},
+{
+  "directory": "/home/pranavm/Documents/C Programs/CutsomMathC/build",
+  "command": "/usr/bin/cc -DUNITY_INCLUDE_DOUBLE -I\"/home/pranavm/Documents/C Programs/CutsomMathC/src/lib/customMath\" -I\"/home/pranavm/Documents/C Programs/CutsomMathC/tests/unity\" -I\"/home/pranavm/Documents/C Programs/CutsomMathC/tests/exponential\" -g -std=gnu99 -o CMakeFiles/run_tests.dir/tests/exponential/e_x_test.c.o -c \"/home/pranavm/Documents/C Programs/CutsomMathC/tests/exponential/e_x_test.c\"",
+  "file": "/home/pranavm/Documents/C Programs/CutsomMathC/tests/exponential/e_x_test.c",
+  "output": "CMakeFiles/run_tests.dir/tests/exponential/e_x_test.c.o"
+},
+{
+  "directory": "/home/pranavm/Documents/C Programs/CutsomMathC/build",
+  "command": "/usr/bin/cc -DUNITY_INCLUDE_DOUBLE -I\"/home/pranavm/Documents/C Programs/CutsomMathC/src/lib/customMath\" -I\"/home/pranavm/Documents/C Programs/CutsomMathC/tests/unity\" -I\"/home/pranavm/Documents/C Programs/CutsomMathC/tests/exponential\" -g -std=gnu99 -o CMakeFiles/run_tests.dir/tests/test_main.c.o -c \"/home/pranavm/Documents/C Programs/CutsomMathC/tests/test_main.c\"",
+  "file": "/home/pranavm/Documents/C Programs/CutsomMathC/tests/test_main.c",
+  "output": "CMakeFiles/run_tests.dir/tests/test_main.c.o"
+}
+]

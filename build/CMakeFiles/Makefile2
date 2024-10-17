@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/pranavm/Documents/C Programs/Cutom_Math"
+CMAKE_SOURCE_DIR = "/home/pranavm/Documents/C Programs/CutsomMathC"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/pranavm/Documents/C Programs/Cutom_Math/build"
+CMAKE_BINARY_DIR = "/home/pranavm/Documents/C Programs/CutsomMathC/build"
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/run_tests.dir/clean
 CMakeFiles/run_tests.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/pranavm/Documents/C Programs/Cutom_Math/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8 "Built target run_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/pranavm/Documents/C Programs/CutsomMathC/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9 "Built target run_tests"
 .PHONY : CMakeFiles/run_tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/pranavm/Documents/C Programs/Cutom_Math/build/CMakeFiles" 8
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/pranavm/Documents/C Programs/CutsomMathC/build/CMakeFiles" 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/run_tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/pranavm/Documents/C Programs/Cutom_Math/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/pranavm/Documents/C Programs/CutsomMathC/build/CMakeFiles" 0
 .PHONY : CMakeFiles/run_tests.dir/rule
 
 # Convenience name for target.

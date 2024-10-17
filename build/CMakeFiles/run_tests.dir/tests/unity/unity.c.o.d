@@ -1,8 +1,8 @@
 CMakeFiles/run_tests.dir/tests/unity/unity.c.o: \
- /home/pranavm/Documents/C\ Programs/Cutom_Math/tests/unity/unity.c \
+ /home/pranavm/Documents/C\ Programs/CutsomMathC/tests/unity/unity.c \
  /usr/include/stdc-predef.h \
- /home/pranavm/Documents/C\ Programs/Cutom_Math/tests/unity/unity.h \
- /home/pranavm/Documents/C\ Programs/Cutom_Math/tests/unity/unity_internals.h \
+ /home/pranavm/Documents/C\ Programs/CutsomMathC/tests/unity/unity.h \
+ /home/pranavm/Documents/C\ Programs/CutsomMathC/tests/unity/unity_internals.h \
  /usr/include/setjmp.h /usr/include/features.h \
  /usr/include/features-time64.h /usr/include/bits/wordsize.h \
  /usr/include/bits/timesize.h /usr/include/sys/cdefs.h \
