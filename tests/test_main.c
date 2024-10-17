@@ -1,5 +1,5 @@
 #include "unity/unity.h"
-#include "trigonometery/sine_test.h"
+#include "exponential/exponen_test.h"
 
 // Test setup and teardown functions (optional)
 void setUp(void) {
@@ -14,15 +14,14 @@ void tearDown(void) {
 int main(void) {
     UNITY_BEGIN();
 
-    RUN_TEST(test_sine_of_zero_radians);
-    RUN_TEST(test_sine_of_pi_over_2_radians);
-    RUN_TEST(test_sine_of_pi_radians);
-    RUN_TEST(test_sine_of_3_pi_over_2_radians);
-    RUN_TEST(test_sine_of_2_pi_radians);
-    RUN_TEST(test_sine_of_90_degrees);
-    RUN_TEST(test_sine_of_180_degrees);
-    RUN_TEST(test_sine_small_angle_approximation);
-    RUN_TEST(test_sine_large_angle);
+    RUN_TEST(test_exponentiation_function_of_zero);
+    RUN_TEST(test_exponentiation_function_of_positive_small_value);
+    RUN_TEST(test_exponentiation_function_of_positive_large_value);
+    RUN_TEST(test_exponentiation_function_of_negative_value);
+    RUN_TEST(test_exponentiation_function_of_negative_large_value);
+    RUN_TEST(test_exponentiation_function_of_small_value);
+    RUN_TEST(test_exponentiation_function_of_large_value);
+    RUN_TEST(test_exponentiation_function_of_large_negative_value);
 
     return UNITY_END();
 }
