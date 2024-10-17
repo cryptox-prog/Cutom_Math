@@ -1,0 +1,28 @@
+#ifndef EXPONEN_TEST_H
+#define EXPONEN_TEST_H
+
+void test_natural_logarithm_of_1(void);
+void test_natural_logarithm_of_greater_than_1(void);
+void test_natural_logarithm_of_value_near_1(void);
+void test_natural_logarithm_of_zero(void);
+void test_natural_logarithm_of_negative_number(void);
+void test_natural_logarithm_of_large_number(void);
+
+void test_exponentiation_function_of_zero(void);
+void test_exponentiation_function_of_positive_small_value(void);
+void test_exponentiation_function_of_positive_large_value(void);
+void test_exponentiation_function_of_negative_value(void);
+void test_exponentiation_function_of_negative_large_value(void);
+void test_exponentiation_function_of_small_value(void);
+void test_exponentiation_function_of_large_value(void);
+void test_exponentiation_function_of_large_negative_value(void);
+
+void test_power_of_zero_base(void);
+void test_power_of_positive_base_with_positive_exponent(void);
+void test_power_of_positive_base_with_negative_exponent(void);
+void test_power_of_negative_base_with_even_integer_exponent(void);
+void test_power_of_negative_base_with_odd_integer_exponent(void);
+void test_power_of_negative_base_with_fractional_exponent(void);
+void test_power_of_fractional_base_with_positive_exponent(void);
+
+#endif  // EXPONEN_TEST_H
