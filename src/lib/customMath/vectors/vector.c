@@ -54,7 +54,7 @@ double distance(Vector V1, Vector V2, int *error_code) {
 
     // TODO: Fix This ugly logic
     int max_dimension = (V1.dimension > V2.dimension) ? V1.dimension : V2.dimension; // They may be of different dimension
-    int flag = (V1.dimension > V2.dimension) ? (V2.dimension - 1) : -(V1.dimension - 1); // Negative flag if V2 has more components
+    int flag = (V1.dimension > V2.dimension) ? (V2.dimension - 1) : -(V1.dimension - 1); // Negative flag if V2 has more components (-1 is since index start form 0)
     int dimension_diff = V1.dimension - V2.dimension;
     double difference_part = 0;
     double sum_part = 0;
@@ -76,7 +76,7 @@ double distance(Vector V1, Vector V2, int *error_code) {
 /// @param V2 vector
 /// @return (double) dot product
 double vector_dot_product(Vector V1, Vector V2) {
-    int min_dimension = (V1.dimension > V2.dimension) ? V2.dimension : V1.dimension; // They may be of different dimension
+    int min_dimension = (V1.dimension > V2.dimension) ? V2.dimension : V1.dimension; // They may be of different dimension, just pic smaller one
     double product_part = 0;
     double sum_part = 0;
     for (int i = 0; i < min_dimension; i++) {
