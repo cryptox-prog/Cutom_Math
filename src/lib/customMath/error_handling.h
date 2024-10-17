@@ -2,11 +2,11 @@
 #define ERROR_HANDLING_H
 
 // Error Codes
-#define ERR_MEM_ALLOC 0 // Memory allocation error
-#define DIV_BY_ZERO 1   // Division by zero error
-#define COMPLEX_RES 2   // The result is a complex number
-#define POSITIVE_FUNC 3   // The result is a complex number
-#define INDEX_OUT_OF_RANGE 4   // The index is out of range
+#define ERR_MEM_ALLOC 1 // Memory allocation error
+#define DIV_BY_ZERO 2   // Division by zero error
+#define COMPLEX_RES 3   // The result is a complex number
+#define POSITIVE_FUNC 4   // The result is a complex number
+#define INDEX_OUT_OF_RANGE 5   // The index is out of range
 
 
 static const char *error_messages[];
