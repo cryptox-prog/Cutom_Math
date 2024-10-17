@@ -1,5 +1,5 @@
 #include "../unity/unity.h"
-#include "sine_test.h"
+#include "trig_test.h"
 #include "../../src/lib/customMath/custom_math.h"
 
 // Test for sine(0) in radians
