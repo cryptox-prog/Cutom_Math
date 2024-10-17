@@ -6,10 +6,10 @@
 /// @param head (pointer to Node) The first element of the list, enter NULL if empty
 /// @param data (int)
 /// @return The new first element of the list
-SLL_Node *SLL_add_to_begginging(SLL_Node *head, int data, int *error_message) {
+SLL_Node *SLL_add_to_begginging(SLL_Node *head, int data, int *error_code) {
     SLL_Node *new_head_node = (SLL_Node *)malloc(1 * sizeof(SLL_Node));
     if (new_head_node == NULL) {
-        *error_message = ERR_MEM_ALLOC;
+        *error_code = ERR_MEM_ALLOC;
         return head;
     }
     new_head_node->data = data;
@@ -21,17 +21,17 @@ SLL_Node *SLL_add_to_begginging(SLL_Node *head, int data, int *error_message) {
 /// @param head (pointer to Node) The first element of the list
 /// @param data (int)
 /// @return The first element of the list
-SLL_Node *SLL_append(SLL_Node *head, int data, int *error_message) {
+SLL_Node *SLL_append(SLL_Node *head, int data, int *error_code) {
     if (head == NULL) {
         // In case list is empty the last elemnt will just be the first element
-        return SLL_add_to_begginging(head, data, error_message);
+        return SLL_add_to_begginging(head, data, error_code);
     }
 
     SLL_Node *current_node = head;
     SLL_Node *prev_node = (SLL_Node *)malloc(1 * sizeof(SLL_Node));
     SLL_Node *new_end_node = (SLL_Node *)malloc(1 * sizeof(SLL_Node));
     if ((prev_node == NULL) || (new_end_node == NULL)) {
-        *error_message = ERR_MEM_ALLOC;
+        *error_code = ERR_MEM_ALLOC;
         return head;
     }
     new_end_node->data = data;
@@ -53,15 +53,15 @@ SLL_Node *SLL_append(SLL_Node *head, int data, int *error_message) {
 /// @param index The index at which the element will be inserted (starts from 0)
 /// @param data (int)
 /// @return The first element of the list
-SLL_Node *SLL_insert(SLL_Node *head, int index, int data, int *error_message) {
+SLL_Node *SLL_insert(SLL_Node *head, int index, int data, int *error_code) {
     if (index == 0) {
         // In case index is 0 the new element will become head
-        return SLL_add_to_begginging(head, data, error_message);
+        return SLL_add_to_begginging(head, data, error_code);
     }
 
     SLL_Node *new_node = (SLL_Node *)malloc(1 * sizeof(SLL_Node));
     if (new_node == NULL) {
-        *error_message = ERR_MEM_ALLOC;
+        *error_code = ERR_MEM_ALLOC;
         return head;
     }
     new_node->data = data;
@@ -76,7 +76,7 @@ SLL_Node *SLL_insert(SLL_Node *head, int index, int data, int *error_message) {
     }
 
     if (current_node == NULL) {
-        *error_message = INDEX_OUT_OF_RANGE;
+        *error_code = INDEX_OUT_OF_RANGE;
         return head;
     }
 

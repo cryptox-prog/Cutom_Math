@@ -7,10 +7,10 @@ typedef struct SLL_Node {
 } SLL_Node;
 
 
-SLL_Node *SLL_add_to_begginging(SLL_Node *head, int data, int *error_message);
-SLL_Node *SLL_append(SLL_Node *head, int data, int *error_message);
-SLL_Node *SLL_insert(SLL_Node *head, int index, int data, int *error_message);
-SLL_Node *SLL_remove(SLL_Node *head, int index, char *error_message);
+SLL_Node *SLL_add_to_begginging(SLL_Node *head, int data, int *error_code);
+SLL_Node *SLL_append(SLL_Node *head, int data, int *error_code);
+SLL_Node *SLL_insert(SLL_Node *head, int index, int data, int *error_code);
+SLL_Node *SLL_remove(SLL_Node *head, int index, char *error_code);
 SLL_Node *SLL_remove_data(SLL_Node *head, int data);
 SLL_Node *SLL_convert_to_array(SLL_Node *head, int *return_array);
 SLL_Node *SLL_create_from_array(SLL_Node *head, int *input_array);
